@@ -5,6 +5,11 @@ body
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+header, h1, h2
+{
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
 .backGround {
     /* The image used */
     background-image: url("../images/leaves-pattern.png");
