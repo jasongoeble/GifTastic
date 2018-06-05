@@ -6,7 +6,7 @@
     <!-- linking in bootstrap styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- link in custom css -->
-    <link rel="stylesheet" href="./asets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- linking in jquery functionality -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -15,93 +15,95 @@
 
 <body>
 
-    <!-- creating a nav bar for the page-->
-    <nav class="nav justify-content-end text-white ">
-        <a class="nav-link" href="#">Giphy Page</a>
-        <a class="nav-link" href="./instructions.html">Instructions</a>
-    </nav>
+    <div class="backGround">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Welcome to the Giphy API Web Interface</h3>
-                <br>
-            </div>
-        <div class="row">
-            <div class="col-1">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-            <div class="col-8 justify-content-center" id="contentButtons">
-            </div>
-            <div class="col-2">
-                <form id="topicAdd">
-                    <label for="topicInput">Please add your topic of choice here: </label>
-                    <input type="text" id="topicInput">
-                    <!-- this submission button will trigger ???-->
-                    <input id="addTopic" type="submit" value="Add Topic">
-                </form>
-            </div>
-            <div class="col-1">
+        <!-- creating a nav bar for the page-->
+        <nav class="nav justify-content-end text-white ">
+            <a class="nav-link" href="#">Giphy Page</a>
+            <a class="nav-link" href="./instructions.html">Instructions</a>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Welcome to the Giphy API Web Interface</h3>
+                    <br>
+                </div>
+            <div class="row">
+                <div class="col-1">
                     <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+                <div class="col-8 justify-content-center" id="contentButtons">
+                </div>
+                <div class="col-2">
+                    <form id="topicAdd">
+                        <label for="topicInput">Please add your topic of choice here: </label>
+                        <input type="text" id="topicInput">
+                        <!-- this submission button will trigger ???-->
+                        <input id="addTopic" type="submit" value="Add Topic">
+                    </form>
+                </div>
+                <div class="col-1">
+                        <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+                <div class="col-3" id="0Giphy">
+                </div>
+                <div class="col-3" id="1Giphy">
+                </div>
+                <div class="col-3" id="2Giphy">
+                </div>
+                <div class="col-2">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+                <div class="col-3" id="3Giphy">
+                </div>
+                <div class="col-3" id="4Giphy">
+                </div>            
+                <div class="col-3" id="5Giphy">
+                </div>  
+                <div class="col-2">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+                <div class="col-3" id="6Giphy">
+                </div>
+                <div class="col-3" id="7Giphy">
+                </div>            
+                <div class="col-3" id="8Giphy">
+                </div>  
+                <div class="col-2">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
+                <div class="col-3" id="9Giphy">
+                </div>
+                <div class="col-8">
+                    <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-            <div class="col-3" id="0Giphy">
-            </div>
-            <div class="col-3" id="1Giphy">
-            </div>
-            <div class="col-3" id="2Giphy">
-            </div>
-            <div class="col-2">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-            <div class="col-3" id="3Giphy">
-            </div>
-            <div class="col-3" id="4Giphy">
-            </div>            
-            <div class="col-3" id="5Giphy">
-            </div>  
-            <div class="col-2">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-            <div class="col-3" id="6Giphy">
-            </div>
-            <div class="col-3" id="7Giphy">
-            </div>            
-            <div class="col-3" id="8Giphy">
-            </div>  
-            <div class="col-2">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-            <div class="col-3" id="9Giphy">
-            </div>
-            <div class="col-8">
-                <!-- this is a spacer column to prevent content from ligning up on the edge of the page-->
-            </div>
-        </div>
-    </div>
-
     <!-- javascript and jquery used to provide the functionality on the page-->
     <script type="text/javascript">
 
@@ -128,12 +130,9 @@
 
             //pull in the value from the user
             var newTopic = $("#topicInput").val();
-            console.log(newTopic);
 
             //push the user topic into the topics array
             topics.push(newTopic);
-            console.log(newTopic)
-            console.log("Topics after push: "+topics);
 
             //clear any existing content from where the buttons will be displayed
             $("#contentButtons").html("");
@@ -152,15 +151,12 @@
             //event.preventDefault();
             
             var giphyTopic = $(this).val();
-            console.log("Giphy Topic Selection: "+giphyTopic);
             
             //this is my giphy API key with 10 result limiter
             var apiKey = "&api_key=s1gFlIqO6zMFCudAbeQl2PBRkG8zGITp&limit=10";
-            console.log("apiKey: "+apiKey);
 
             //this is the base of the giphy API url
             var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + giphyTopic + apiKey;
-            console.log("URL for API: "+queryURL);
 
             $.ajax(
                 {
@@ -174,9 +170,6 @@
                     for (f=0; f<10; f++)
                     {
                         g="#"+f+"Giphy";
-                        console.log("A: "+f);
-                        console.log("B: "+g);
-
                         $(g).html("");
                     }
 
@@ -185,13 +178,11 @@
                     {
                         //set a variable to hold the div id value to which the returned information is going to be appended to                       
                         b="#"+a+"Giphy";
-                        console.log("A: "+a);
-                        console.log("B: "+b);
         
                         //jquery method of appending html content (including JSON data) to a specified html element
-                        $(b).append("<h4>Title:</h4><p> "+feedback.data[a].title+"</p><br>");
+                        $(b).append("<h3>Title:</h3><p>"+feedback.data[a].title+"</p><br>");
                         $(b).append("<img src='"+feedback.data[a].images.fixed_width_still.url+"'data-still='"+feedback.data[a].images.fixed_width_still.url+"' data-animate='"+feedback.data[a].images.fixed_width.url+"' data-state='still' class='gifClick'>");
-                        $(b).append("<h4>Rating:</h4><p> "+feedback.data[a].rating+"</p><br>");
+                        $(b).append("<h4>Rating: "+feedback.data[a].rating+"</h4><br>");
                     }
                 });
             });
