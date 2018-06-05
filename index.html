@@ -6,7 +6,7 @@
     <!-- linking in bootstrap styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- link in custom css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./asets/css/style.css">
     <!-- linking in jquery functionality -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -145,7 +145,8 @@
 
 
         //on topic button click the following runs
-        $(".pullGIFS").on("click", function(event) {
+        $(document).ready(function (){
+            $(document).on("click", ".pullGIFS", function(event) {
             //prevents the submit button from trying to submit the form
             //issues can arise when enter key is pressed instaed of actually clicking on the submit button
             //event.preventDefault();
@@ -188,14 +189,16 @@
                         console.log("B: "+b);
         
                         //jquery method of appending html content (including JSON data) to a specified html element
-                        $(b).append("<h3>Rating: "+feedback.data[a].rating+"</h3><br>");
+                        $(b).append("<h4>Title:</h4><p> "+feedback.data[a].title+"</p><br>");
                         $(b).append("<img src='"+feedback.data[a].images.fixed_width_still.url+"'data-still='"+feedback.data[a].images.fixed_width_still.url+"' data-animate='"+feedback.data[a].images.fixed_width.url+"' data-state='still' class='gifClick'>");
+                        $(b).append("<h4>Rating:</h4><p> "+feedback.data[a].rating+"</p><br>");
                     }
                 });
+            });
         });
-
         //on individual gif click, the following runs
-        $(".gifClick").on("click", function () {
+        $(document).ready(function () {
+            $(document).on("click", ".gifClick", function () {
             //the attr jQuery method to set the value of an attribute
             var state = $(this).attr("data-state");
 
@@ -211,7 +214,8 @@
                 $(this).attr("src", $(this).attr("data-still"));
                 $(this).attr("data-state", "still");               
             }
-        })
+            });
+        });
 
     </script>
 
